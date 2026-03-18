@@ -21,42 +21,41 @@ A beautiful light color theme for Visual Studio Code, inspired by the **transgen
 
 ## Installation
 
-### From Marketplace
+### From Source (GitHub)
 
-1. Open **Extensions** sidebar in VS Code (`Ctrl+Shift+X`)
-2. Search for `MTF Pride`
-3. Click **Install**
-4. Go to `Preferences: Color Theme` and select **MTF Pride**
+```bash
+# 1. Clone the repository
+git clone https://github.com/yunlong10/mtf-pride-vscode-theme.git
+cd mtf-pride-vscode-theme
 
-### From VSIX
+# 2. Install the packaging tool (if not already installed)
+npm install -g @vscode/vsce
+
+# 3. Package the theme
+vsce package
+
+# 4. Install the generated .vsix file
+#    Open VS Code / Cursor → Cmd+Shift+P → "Extensions: Install from VSIX"
+#    Select the generated mtf-pride-vscode-theme-0.0.1.vsix file
+```
+
+After installation, press `Cmd+Shift+P`, type **Color Theme**, and select **MTF Pride**.
+
+### From VSIX (Release)
 
 1. Download the `.vsix` file from [Releases](https://github.com/yunlong10/mtf-pride-vscode-theme/releases)
-2. Run `code --install-extension mtf-pride-vscode-theme-x.x.x.vsix`
+2. Open VS Code / Cursor
+3. Press `Cmd+Shift+P` → **Extensions: Install from VSIX**
+4. Select the downloaded `.vsix` file
+5. Press `Cmd+Shift+P` → **Color Theme** → select **MTF Pride**
 
 ## Development
 
 ```bash
-# Clone the repo
 git clone https://github.com/yunlong10/mtf-pride-vscode-theme.git
 cd mtf-pride-vscode-theme
-
-# Open in VS Code
 code .
-
 # Press F5 to launch Extension Development Host and preview the theme
-```
-
-## Publishing
-
-```bash
-# Install vsce
-npm install -g @vscode/vsce
-
-# Package
-vsce package
-
-# Publish
-vsce publish
 ```
 
 ## License
