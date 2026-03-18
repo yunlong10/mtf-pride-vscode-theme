@@ -1,0 +1,40 @@
+{
+  "name": "mtf-pride-vscode-theme",
+  "displayName": "MTF Pride Theme",
+  "description": "A beautiful light color theme inspired by the transgender pride flag — light blue, pink, and white.",
+  "version": "0.0.1",
+  "publisher": "yunlong10",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "pride",
+    "transgender",
+    "trans"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yunlong10/mtf-pride-vscode-theme"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#FAFAFF",
+    "theme": "light"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "MTF Pride",
+        "uiTheme": "vs",
+        "path": "./themes/mtf-pride-color-theme.json"
+      }
+    ]
+  }
+}
